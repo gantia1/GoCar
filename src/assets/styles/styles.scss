@@ -1,0 +1,200 @@
+body {
+  background-color: #EDF0F0;
+  margin: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+svg {
+  vertical-align: middle;
+}
+
+//Header
+
+.header-container {
+  position: absolute;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 25px 27px 0;
+  width: 100%;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 27px;
+    max-width: 1364px;
+    margin: auto;
+    height: 75px;
+    box-sizing: border-box;
+  }
+
+  a {
+    color: #283D52;
+  }
+
+  .header-nav-item {
+    display: flex;
+    align-items: center;
+
+    .header-nav-list {
+      span {
+        cursor: pointer;
+        margin: 15px;
+        padding: 10px 15px;
+        border-radius: 12px;
+        transition: ease-out .1s;
+      }
+    }
+
+    .header-nav-list span:first-child:hover {
+      background-color: #F9C32D;
+      transition: ease-out .1s;
+      box-shadow: 0 0 20px #F9C32D57;
+
+    }
+
+    .header-nav-list span:nth-child(2):hover {
+      background-color: #5FD36C;
+      transition: ease-out .1s;
+      box-shadow: 0 0 20px #5FD36C4D;
+    }
+
+    .header-language-switch {
+      display: flex;
+      flex-direction: column;
+      border-radius: 12px;
+      height: 40px;
+      margin-top: 20px;
+      overflow: hidden;
+      color: #283D52;
+      padding: 10px;
+    }
+
+    .header-language-switch div:last-child {
+      margin-top: 10px;
+      display: none;
+      transition: ease-out .1s;
+    }
+
+    .header-language-switch:hover div:last-child {
+      display: block;
+    }
+
+    .header-language-switch:hover {
+      background-color: #5FD36C;
+      transition: ease-out .1s;
+    }
+
+    svg {
+      margin-right: 5px;
+    }
+  }
+}
+
+//top page banner
+
+.top-page-banner {
+  display: flex;
+  max-width: 1364px;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  padding: 0 54px;
+  width: 100%;
+  height: 500px;
+  color: #283D52;
+  overflow: hidden;
+  box-sizing: border-box;
+
+  .top-page-banner-images:hover .car {
+    left: 52%;
+    transition: left 1s;
+  }
+
+  .top-page-banner-images:hover .road {
+    left: calc(53% + 100px);
+    transition: left 1s;
+  }
+
+  .top-page-banner-images:hover .center-green-circle {
+    left: calc(52% - 280px);
+    transition: left 1s;
+  }
+
+  .top-page-banner-images:hover .center-circle {
+    left: calc(55% - 400px);
+    transition: left 1s;
+  }
+
+  .top-page-banner-images:hover .top-yellow {
+    left: calc(52% - 100px);
+    transition: left 1s;
+  }
+
+  .car {
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    transform: translate(-30%, -50%);
+    transition: left 1s;
+    width: 450px;
+  }
+
+
+  .road {
+    position: absolute;
+    z-index: -1;
+    left: calc(50% + 100px);
+    top: 300px;
+    transform: translate(-10%, -50%);
+    transition: left 1s;
+  }
+
+  .center-green-circle {
+    position: absolute;
+    z-index: -2;
+    top: 100px;
+    left: calc(55% - 280px);
+    transition: left 1s;
+  }
+
+  .center-circle {
+    position: absolute;
+    z-index: -1;
+    top: 70px;
+    left: calc(60% - 400px);
+    transition: left 1s;
+  }
+
+  .top-yellow {
+    position: absolute;
+    top: -150px;
+    left: calc(50% - 100px);
+    transition: left 1s;
+  }
+
+  .top-yellow:hover {
+    left: calc(53% - 100px);
+
+  }
+
+  .right-green {
+    position: absolute;
+    right: -450px;
+    top: 40px;
+    z-index: -2;
+  }
+
+  .right-circle {
+    position: absolute;
+    top: -150px;
+    right: -250px;
+  }
+}
