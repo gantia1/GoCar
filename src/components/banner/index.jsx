@@ -27,7 +27,6 @@ function Index() {
                 <img className="center-green-circle" src={center_green} alt="green-circle"/>
                 <TopYellow className="top-yellow"/>
             </div>
-
             <img className="right-green" src={right_green} alt="right-green"/>
             <RightCircle className="right-circle"/>
         </div>

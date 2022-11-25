@@ -4,6 +4,7 @@ import {ReactComponent as Plus} from "../../assets/images/svg/plus.svg";
 import {ReactComponent as User} from "../../assets/images/svg/user.svg";
 import {ReactComponent as Georgia} from "../../assets/images/svg/GE.svg";
 import Banner from "../banner"
+import Filter from "../filter";
 
 function Index() {
     const location = useLocation();
@@ -29,7 +30,13 @@ function Index() {
                 </div>
             </div>
             {location.pathname === "/" ?
-                (<Banner/>)
+                (
+                    <>
+                        <Banner/>
+                        <Filter/>
+                    </>
+                )
+
                 : null}
         </>
     );

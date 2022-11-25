@@ -198,3 +198,99 @@ svg {
     right: -250px;
   }
 }
+
+//Filter
+
+.filter {
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 0 54px;
+  max-width: 1364px;
+  color: #283D52;
+
+  height: 500px;
+
+  .filter-title {
+    font-weight: bolder;
+    margin: 13px 15px;
+  }
+
+  .filter-container {
+    cursor: pointer;
+  }
+
+  .filter-input {
+    border-radius: 10px;
+    border: solid 1px transparent;
+    outline-color: #5FD36C;
+    color: #283D52;
+    font-size: 16px;
+    padding: 15px;
+    cursor: pointer;
+    background-image: url("../../assets/images/svg/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-origin: content-box;
+    pointer-events: none;
+  }
+
+  .filter-input.active {
+    border: solid 1px #5FD36C;
+  }
+
+
+  .filter-list-triangle {
+    position: absolute;
+    z-index: 1;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #5FD36C;
+    transform: translate(28px, 3px);
+  }
+
+  .filter-list-triangle-white {
+    position: absolute;
+    z-index: 2;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    transform: translate(29px, 4px);
+  }
+
+  .filter-list {
+    background-color: #fff;
+    border-radius: 7px;
+    margin-top: 13px;
+    border: 1px solid #5FD36C;
+    height: 117px;
+    overflow: auto;
+    position: absolute;
+    width: 233px;
+
+  }
+
+  .filter-options {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  .filter-options:hover {
+    background-color: #5FD36C;
+  }
+
+  .filter-calendar {
+    border-radius: 10px 0 0 10px;
+    width: 40%;
+  }
+
+  .filter-time {
+    border-radius: 0 10px 10px 0;
+    width: 20%;
+  }
+}
